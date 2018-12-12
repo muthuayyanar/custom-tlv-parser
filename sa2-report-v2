@@ -1,0 +1,256 @@
+************* Module parse-tlv-v2
+C: 12, 0: Line too long (115/100) (line-too-long)
+C: 13, 0: Line too long (113/100) (line-too-long)
+C: 16, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C: 17, 0: Line too long (103/100) (line-too-long)
+C: 18, 0: Line too long (141/100) (line-too-long)
+C: 19, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]	# Slice 2* length from data - This will be the "Value"
+                            ^ (bad-whitespace)
+C: 20, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C: 21, 0: Exactly one space required around comparison
+    if name=="04" or name== "06":
+           ^^ (bad-whitespace)
+C: 21, 0: Exactly one space required before comparison
+    if name=="04" or name== "06":
+                         ^^ (bad-whitespace)
+C: 22, 0: Exactly one space required after comma
+        ascii_value = str(codecs.decode(value,"hex"))
+                                             ^ (bad-whitespace)
+C: 23, 0: Exactly one space required after comma
+        print(name +'\t'+'\t'+'\t'+str(int(length,16))+'\t'+':'+ascii_value[0:120])
+                                                 ^ (bad-whitespace)
+C: 25, 0: Exactly one space required after comma
+        print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                ^ (bad-whitespace)
+C: 36, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C: 38, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C: 39, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C: 43, 0: Exactly one space required after :
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+        ^ (bad-whitespace)
+C: 43, 0: Exactly one space required after comma
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                 ^ (bad-whitespace)
+C: 53, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C: 55, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C: 56, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C: 61, 0: Exactly one space required after comma
+        print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                ^ (bad-whitespace)
+C: 71, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C: 73, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C: 74, 0: Exactly one space required around assignment
+    data=data[int(length,16)*2:]
+        ^ (bad-whitespace)
+C: 74, 0: Exactly one space required after comma
+    data=data[int(length,16)*2:]
+                        ^ (bad-whitespace)
+C: 78, 0: Exactly one space required after :
+    else:print(name+"   "+str(int(length,16))+": "+value[0:120])
+        ^ (bad-whitespace)
+C: 78, 0: Exactly one space required after comma
+    else:print(name+"   "+str(int(length,16))+": "+value[0:120])
+                                        ^ (bad-whitespace)
+C: 88, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C: 90, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C: 91, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C: 95, 0: Exactly one space required after :
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+        ^ (bad-whitespace)
+C: 95, 0: Exactly one space required after comma
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                 ^ (bad-whitespace)
+C:105, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C:107, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C:108, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C:112, 0: Exactly one space required after :
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+        ^ (bad-whitespace)
+C:112, 0: Exactly one space required after comma
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                 ^ (bad-whitespace)
+C:122, 0: Exactly one space required after comma
+    length = data[:4].replace(" ","")
+                                 ^ (bad-whitespace)
+C:124, 0: Exactly one space required after comma
+    value = data[:int(length,16)*2]
+                            ^ (bad-whitespace)
+C:125, 0: Exactly one space required after comma
+    data = data[int(length,16)*2:]
+                          ^ (bad-whitespace)
+C:129, 0: Exactly one space required after :
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+        ^ (bad-whitespace)
+C:129, 0: Exactly one space required after comma
+    else:print(name+"\t"+'\t'+'\t'+str(int(length,16))+": \t "+value[0:120])
+                                                 ^ (bad-whitespace)
+C:  1, 0: Invalid module name "parse-tlv-v2" (invalid-name)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  3, 4: Invalid constant name "data" (invalid-name)
+C: 11, 4: Invalid constant name "name" (invalid-name)
+C: 12, 4: Invalid constant name "data" (invalid-name)
+C: 16, 4: Invalid constant name "length" (invalid-name)
+C: 17, 4: Invalid constant name "data" (invalid-name)
+C: 19, 4: Invalid constant name "value" (invalid-name)
+C: 20, 4: Invalid constant name "data" (invalid-name)
+C: 22, 8: Invalid constant name "ascii_value" (invalid-name)
+C: 34, 4: Invalid constant name "name" (invalid-name)
+C: 35, 4: Invalid constant name "data" (invalid-name)
+C: 36, 4: Invalid constant name "length" (invalid-name)
+C: 37, 4: Invalid constant name "data" (invalid-name)
+C: 38, 4: Invalid constant name "value" (invalid-name)
+C: 39, 4: Invalid constant name "data" (invalid-name)
+C: 51, 4: Invalid constant name "name" (invalid-name)
+C: 52, 4: Invalid constant name "data" (invalid-name)
+C: 53, 4: Invalid constant name "length" (invalid-name)
+C: 54, 4: Invalid constant name "data" (invalid-name)
+C: 55, 4: Invalid constant name "value" (invalid-name)
+C: 56, 4: Invalid constant name "data" (invalid-name)
+C: 69, 4: Invalid constant name "name" (invalid-name)
+C: 70, 4: Invalid constant name "data" (invalid-name)
+C: 71, 4: Invalid constant name "length" (invalid-name)
+C: 72, 4: Invalid constant name "data" (invalid-name)
+C: 73, 4: Invalid constant name "value" (invalid-name)
+C: 74, 4: Invalid constant name "data" (invalid-name)
+C: 86, 4: Invalid constant name "name" (invalid-name)
+C: 87, 4: Invalid constant name "data" (invalid-name)
+C: 88, 4: Invalid constant name "length" (invalid-name)
+C: 89, 4: Invalid constant name "data" (invalid-name)
+C: 90, 4: Invalid constant name "value" (invalid-name)
+C: 91, 4: Invalid constant name "data" (invalid-name)
+C:103, 4: Invalid constant name "name" (invalid-name)
+C:104, 4: Invalid constant name "data" (invalid-name)
+C:105, 4: Invalid constant name "length" (invalid-name)
+C:106, 4: Invalid constant name "data" (invalid-name)
+C:107, 4: Invalid constant name "value" (invalid-name)
+C:108, 4: Invalid constant name "data" (invalid-name)
+C:120, 4: Invalid constant name "name" (invalid-name)
+C:121, 4: Invalid constant name "data" (invalid-name)
+C:122, 4: Invalid constant name "length" (invalid-name)
+C:123, 4: Invalid constant name "data" (invalid-name)
+C:124, 4: Invalid constant name "value" (invalid-name)
+C:125, 4: Invalid constant name "data" (invalid-name)
+
+
+Report
+======
+111 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |0.00        |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |115    |87.12 |115      |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |1      |0.76  |1        |=          |
++----------+-------+------+---------+-----------+
+|empty     |16     |12.12 |16       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |88     |88       |=          |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |0      |0        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------+------------+
+|message id        |occurrences |
++==================+============+
+|invalid-name      |45          |
++------------------+------------+
+|bad-whitespace    |38          |
++------------------+------------+
+|line-too-long     |4           |
++------------------+------------+
+|missing-docstring |1           |
++------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 2.07/10 (previous run: 2.07/10, +0.00)
+
